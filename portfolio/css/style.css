@@ -1,3 +1,78 @@
 body {
 	text-align: center;
+	margin: 0;
+	user-select: none;
+}
+
+.header {
+	width: 100%;
+	height: 300px;
+    background-size: cover;
+	background: url(./../img/header.jpg);
+}
+
+h1 {
+	margin: 0;
+}
+
+header > p {
+	margin: 0;
+}
+
+
+ul {
+	margin: 20px 0 0 0;
+	padding: 0;
+} 
+
+li {
+	display: inline;
+	margin: 0 15px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+li > img {
+	padding: 0 15px 0 0;
+}
+
+.profile {
+	text-decoration: none;
+}
+
+.skill {
+	text-decoration: none;
+}
+
+.works {
+	text-decoration: none;
+}
+
+.contact {
+	text-decoration: none;
+}
+
+.profile-title {
+	margin: 20px 0 0 0;
+	font-size: 30px;
+}
+
+.skill-title {
+	margin: 20px 0 0 0;
+	font-size: 30px;
+}
+
+.works-title {
+	margin: 20px 0 0 0;
+	font-size: 30px;
+}
+
+.contact-title {
+	margin: 20px 0 0 0;
+	font-size: 30px;
+}
+
+/* スマートフォン向け CSS */
+@media (max-width: 767px) {
+
 }

@@ -52,25 +52,190 @@ li > img {
 	text-decoration: none;
 }
 
-.profile-title {
+.section {
 	margin: 20px 0 0 0;
+}
+
+/* メイン profile */
+.main-profile {
+	display: inline-block;
+	margin: 0 7px 0;
+	padding: 2px;
+}
+
+.profile-title {
+	display: inline-block;
+	margin: 0;
+	/* vertical-align: middle; */
 	font-size: 30px;
+}
+
+.text {
+	display: inline-block;
+	width: 450px;
+	line-height: 1.8;
+	margin:  15px auto 0;
+	padding: 4px;
+	font-size: 16px;
+	text-align: left;
+	text-indent: 16px;
+}
+/* メイン profile 終了*/
+
+/* メイン skill */
+
+.main-skill {
+	display: inline-block;
+	padding: 2px;
 }
 
 .skill-title {
-	margin: 20px 0 0 0;
+	display: inline-block;
+	margin: 0;
 	font-size: 30px;
+}
+
+.skill-sheet {
+	width: 500px;
+	height: auto;
+	margin: 15px auto 0;
+	/* border: 2px solid rgb(170, 170, 170); */
+}
+
+.sheet-title {
+	/* margin: 10px auto 0; */
+	margin: 0;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.sheet-content {
+	margin: 10px auto 0;
+	font-size: 20px;
+}
+
+
+.skill-content {
+	margin: 0;
+	font-size: 30px;
+}
+
+table {
+	width: 250px;
+	margin: 12px auto 0;
+}
+
+th {
+	padding: 2px;
+	font-size: 20px;
+}
+
+td {
+	font-size: 20px;
+}
+
+.star5_rating {
+	position: relative;
+    z-index: 0;
+    display: inline-block;
+    white-space: nowrap;
+    color: rgb(170, 170, 170);
+}
+
+.star5_rating:before,.star5_rating:after{
+    content: '★★★★★';
+}
+
+.star5_rating:after{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgb(250, 215, 30);
+}
+
+.star5_rating[data-rate="5"]:after{ width: 100%; } 
+.star5_rating[data-rate="4.5"]:after{ width: 90%; } 
+.star5_rating[data-rate="4"]:after{ width: 80%; } 
+.star5_rating[data-rate="3.5"]:after{ width: 70%; } 
+.star5_rating[data-rate="3"]:after{ width: 60%; } 
+.star5_rating[data-rate="2.5"]:after{ width: 50%; }
+.star5_rating[data-rate="2"]:after{ width: 40%; } 
+.star5_rating[data-rate="1.5"]:after{ width: 30%; }
+.star5_rating[data-rate="1"]:after{ width: 20%; } 
+.star5_rating[data-rate="0.5"]:after{ width: 10%; } 
+.star5_rating[data-rate="0"]:after{ width: 0%; }
+
+/* メイン skill 終了*/
+
+/* メイン works */
+
+.main-works {
+	padding: 2px;
 }
 
 .works-title {
-	margin: 20px 0 0 0;
+	display: inline-block;
+	margin: 0;
 	font-size: 30px;
 }
 
+/* メイン works 終了*/
+
+
+/* メイン contact */
+
+/* .main-contact {
+	margin: 12px;
+} */
+
 .contact-title {
-	margin: 20px 0 0 0;
+	display: inline-block;
+	margin: 0;
 	font-size: 30px;
 }
+
+.address {
+	height: 100px;
+}
+
+.connection {
+	margin: 10px 0 0;
+	font-size: 18px;
+}
+
+.email {
+	margin: 10px 0 0;
+	font-size: 25px;
+}
+
+.footer {
+	height: 150px;
+	padding: 20px ;
+	background-color: rgb(123, 120, 120);
+}
+
+footer > nav {
+	margin: 0;
+}
+
+.footer-link ul {
+	margin: 0;
+}
+
+.footer-link li {
+	margin: 0;
+	padding: 0 20px;
+	font-size: 15px;
+}
+
+.copyright {
+	margin: 10px 0 0;
+}
+
+/* メイン contact 終了*/
 
 /* スマートフォン向け CSS */
 @media (max-width: 767px) {

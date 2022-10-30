@@ -19,7 +19,6 @@ header > p {
 	margin: 0;
 }
 
-
 ul {
 	margin: 20px 0 0 0;
 	padding: 0;
@@ -58,9 +57,12 @@ li > img {
 
 /* メイン profile */
 .main-profile {
-	display: inline-block;
-	margin: 0 7px 0;
 	padding: 2px;
+}
+
+.main-profile > img {
+	width: 30px;
+	height: 30px;
 }
 
 .profile-title {
@@ -78,15 +80,19 @@ li > img {
 	padding: 4px;
 	font-size: 16px;
 	text-align: left;
-	text-indent: 16px;
+	/* text-indent: 16px; */
 }
 /* メイン profile 終了*/
 
 /* メイン skill */
 
 .main-skill {
-	display: inline-block;
 	padding: 2px;
+}
+
+.main-skill > img {
+	width: 30px;
+	height: 30px;
 }
 
 .skill-title {
@@ -176,21 +182,89 @@ td {
 	padding: 2px;
 }
 
+.main-works > img {
+	width: 30px;
+	height: 30px;
+}
+
 .works-title {
 	display: inline-block;
 	margin: 0;
 	font-size: 30px;
 }
 
-/* メイン works 終了*/
+/* .article {
 
+} */
+
+.airticle-caption {
+	display: inline-block;
+	width: 45%;
+	margin: 15px 10px 0 10px;
+	border: 1px solid rgba(170, 170, 170);
+	border-radius: 5px;
+	background-color:rgba(214, 213, 213, 0.3);
+}
+
+.caption-img {
+	display: block;
+	width: 85%;
+	height: 230px;
+	margin: 10px auto 0;
+}
+
+.caption-title {
+	margin: 10px auto 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.sub-title {
+	margin: 10px auto 0;
+	padding: 3px;
+	border-top: 1px solid rgba(170, 170, 170, 0.3);
+	font-size: 19px;
+}
+
+.caption-url {
+	padding: 3px;
+	font-size: 15px;
+}
+
+.caption-content {
+	margin: 15px 7px 0;
+	padding: 3px;
+	border-top: 1px solid rgba(170, 170, 170, 0.3);
+	text-align: left;
+}
+
+.caption-word {
+	margin: 10px auto 0;
+	padding-top: 5px;
+	border-top: 1px solid rgba(170, 170, 170, 0.3);
+	font-size: 19px;
+}
+
+.use-word {
+	margin: 10px auto;
+	padding: 4px;
+	font-size: 15px;
+	/* word-wrap : break-word;
+    overflow-wrap : break-word; */
+}
+
+/* メイン works 終了*/
 
 /* メイン contact */
 
-/* .main-contact {
-	margin: 12px;
-} */
+.main-contact {
+	padding: 2px;
+}
 
+.main-contact > img {
+	width: 30px;
+	height: 30px;
+}
 .contact-title {
 	display: inline-block;
 	margin: 0;
@@ -212,7 +286,7 @@ td {
 }
 
 .footer {
-	height: 150px;
+	height: 70px;
 	padding: 20px ;
 	background-color: rgb(123, 120, 120);
 }

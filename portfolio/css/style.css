@@ -189,7 +189,8 @@ td {
     z-index: 0;
     display: inline-block;
     white-space: nowrap;
-    color: rgb(170, 170, 170);
+    color: rgb(135, 135, 135, 0.5);
+    /* color: rgb(170, 170, 170); */
 }
 
 .star5_rating:before,.star5_rating:after{

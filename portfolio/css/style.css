@@ -9,7 +9,6 @@ header {
     width: 100%;
     height: 400px;
 	background: url(./../img/header.jpg);
-	/* background-color:rgba(255, 255, 255, 0.65); */
 	background-color: rgba(145, 145, 145, 0.5);
     background-blend-mode: lighten;
 	background-repeat: no-repeat;
@@ -18,9 +17,9 @@ header {
 }
 
 header > p {
-    display: inline-block;
-	line-height: 1.5em;
-    margin: 120px 0;
+    /* display: inline-block;  */
+	margin: 0;
+	line-height: 400px;
     color: rgb(255, 255, 255);
 	font-size: 65px;
     font-weight: bold;
@@ -34,7 +33,8 @@ ul {
 
 li {
 	display: inline-block;
-	padding: 0 15px;
+	margin: 0 15px;
+	/* padding: 0 15px; */
 }
 
 li > a {
@@ -49,37 +49,42 @@ li > a {
 li > img {
 	width: 42px;
 	height: 42px;
-	padding: 0 13px 0 0;
+	margin: 0 13px 0 0;
+	/* padding: 0 13px 0 0; */
 }
 
 li > a:hover {
     color: rgb(67, 57, 57, 0.4);
 }
 
-.section {
+section {
 	margin: 30px 0 0 0;
 }
 
-/* メイン profile */
-.profile {
-	padding: 3px;
+.profile, .skill,
+.works, .contact {
+	padding: 5px 0;
 }
 
-.profile > img {
+.profile > img, .skill > img,
+.works > img, .contact > img {
 	width: 55px;
 	height: 55px;
-    padding: 0 20px;
+    margin: 0 20px;
 }
 
-.profile-title {
+.profile-title, .skill-title, 
+.works-title, .contact-title {
 	display: inline-block;
     line-height: 1.5em;
 	margin: 0;
-	vertical-align: 15px;
+	vertical-align: 10px;
 	font-size: 35px;
     font-weight: bold;
     letter-spacing: 1px;
 }
+
+/* profile 開始 */
 
 .photo {
 	display:inline-block;
@@ -104,28 +109,30 @@ li > a:hover {
 	font-size: 17px;
 	text-align: left;
 }
-/* メイン profile 終了*/
 
-/* メイン skill */
+/* profile 終了*/
 
-.skill {
-	padding: 2px;
-}
+/* skill 開始 */
 
-.skill > img {
+/* .skill {
+	padding: 3px 0;
+} */
+
+/* .skill > img {
 	width: 55px;
 	height: 55px;
-    padding: 0 20px;
-}
+    margin: 0 20px;
+} */
 
-.skill-title {
+/* .skill-title {
 	display: inline-block;
     line-height: 1.5em;
 	margin: 0;
-	vertical-align: 15px;
+	vertical-align: 10px;
 	font-size: 35px;
+    font-weight: bold;
     letter-spacing: 1px;
-}
+} */
 
 .skill-text {
 	width: 500px;
@@ -184,18 +191,17 @@ table td:nth-child(2) {
 	font-size: 30px;
 }
 
+
 .star5_rating {
 	position: relative;
     z-index: 0;
     display: inline-block;
     white-space: nowrap;
-    color: rgba(178, 178, 178, 0.5);
-    /* color: rgb(170, 170, 170); */
+    color: rgb(188, 188, 188);
 }
 
 .star5_rating:before,.star5_rating:after{
     content: '★★★★★';
-	/* color: rgb(193, 193, 193); */
 }
 
 .star5_rating:after{
@@ -220,29 +226,29 @@ table td:nth-child(2) {
 .star5_rating[data-rate="0.5"]:after{ width: 10%; } 
 .star5_rating[data-rate="0"]:after{ width: 0%; }
 
-/* メイン skill 終了*/
+/*  skill 終了*/
 
-/* メイン works */
+/* works 開始 */
 
-.works {
-	padding: 2px;
-}
+/* .works {
+	padding: 3px;
+} */
 
-.works > img {
+/* .works > img {
 	width: 55px;
 	height: 55px;
-    padding: 0 20px;
-}
+    margin: 0 20px;
+} */
 
-.works-title {
+/* .works-title {
 	display: inline-block;
     line-height: 1.5em;
 	margin: 0;
-	vertical-align: 15px;
+	vertical-align: 10px;
 	font-size: 35px;
     font-weight: bold;
     letter-spacing: 1px;
-}
+} */
 
 .airticle-caption {
 	display: inline-block;
@@ -313,34 +319,35 @@ table td:nth-child(2) {
 	font-size: 15px;
 }
 
-/* メイン works 終了*/
+/* works 終了*/
 
-/* メイン contact */
+/* contact 開始 */
 
-.contact {
-	padding: 2px;
-}
+/* .contact {
+	padding: 3px;
+} */
 
-.contact > img {
+/* .contact > img {
 	width: 55px;
 	height: 55px;
-    padding: 0 20px;
-}
+    margin: 0 20px;
+} */
 
-.contact-title {
+/* .contact-title {
 	display: inline-block;
     line-height: 1.5em;
 	margin: 0;
-	vertical-align: 15px;
+	vertical-align: 10px;
 	font-size: 35px;
     font-weight: bold;
     letter-spacing: 1px;
-}
-/* 
-#contact {
+} */
+
+/* #contact {
 	color: white;
 	background-color: rgba(52, 52, 52, 0.8);
 } */
+
 .address {
 	height: 200px;
 	color: white;
@@ -354,28 +361,24 @@ table td:nth-child(2) {
 }
 
 .email {
+	width: 450px;
+	height: 60px;
 	margin: 40px auto auto;
+	padding-top: 12px;
 	line-height: 1.5em;
 	/* border: 2px solid black; */
     /* border-radius: 5px; */
-	/* color: white;
-	background-color: rgb(123, 120, 120); */
+	/* color: white; */
+	background-color: rgb(132, 132, 132);
 	font-size: 30px;
-	/* display: table-cell;
-	vertical-align: top; */
 	letter-spacing: 1.5px;
 	user-select: all;
 }
 
-.footer {
+footer {
 	height: 100px;
-	padding-top: 10px;
-	color: azure;
+	padding-top: 15px;
 	background-color: rgb(20, 67, 128);
-}
-
-footer > nav {
-	margin: 0;
 }
 
 .footer-link ul {
@@ -384,13 +387,15 @@ footer > nav {
 
 .footer-link li {
 	margin: 0;
-	padding: 0 20px;
+	margin: 0 20px;
+	/* padding: 0 20px; */
 	font-size: 10px;
 }
 
 .footer-link li a {
-	font-size: 15px ;
-	color: azure;
+	font-size: 15px;
+	color: rgb(241, 241, 241);
+	/* color: red; */
 	text-decoration: none;
 	vertical-align: middle;
 }
@@ -400,13 +405,96 @@ footer > nav {
 }
 
 .copyright {
-	margin: 10px 0 0;
+	margin: 20px 0 0;
 	font-size: 15px ;
+	color: rgb(241, 241, 241);
 }
 
-/* メイン contact 終了*/
+/* contact 終了*/
 
 /* スマートフォン向け CSS */
 @media (max-width: 767px) {
+
+	header {
+		height: 300px;
+	}
+
+	header > p {
+		padding: 115px 5px 0;
+		line-height: 1.2;
+		font-size: 40px;
+		letter-spacing: 0.5px;
+	}
+
+	ul {
+		display:flex;
+		margin-top: 10px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	li {
+		margin: 0 10px 0 0;
+	}
+
+	/* ul > li:nth-child(3) {
+		display:inline-block;
+		display:flex;
+		background-color:red;
+	} */
+	/* ul > li:nth-child(4) {
+		display:inline-block;
+		display:flex;
+		background-color:red;
+		justify-content: left;
+	} */
+	
+	li > a {
+		font-size: 18px;
+		vertical-align: 7px;
+	}
+	
+	li > img {
+		width: 30px;
+		height: 30px;
+		margin: 0 8px 0 0;
+	}
+	
+	section {
+		margin-top: 20px;
+	}
+	
+	.profile, .skill,
+	.works, .contact {
+		padding: 3px 0;
+	}
+	
+	.profile > img, .skill > img,
+	.works > img, .contact > img {
+		width: 47px;
+		height: 47px;
+		margin: 0 10px;
+	}
+	
+	.profile-title, .skill-title, 
+	.works-title, .contact-title {
+		vertical-align: 10px;
+		font-size: 27px;
+	}
+
+/* profile 開始 */
+
+/* profile 終了*/
+
+/* skill 開始 */
+
+/* skill 終了*/
+
+/* works 開始 */
+
+/* works 終了*/
+/* contact 開始 */
+
+/* contact 終了*/
 
 }

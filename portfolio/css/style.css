@@ -17,7 +17,6 @@ header {
 }
 
 header > p {
-    /* display: inline-block;  */
 	margin: 0;
 	line-height: 400px;
     color: rgb(255, 255, 255);
@@ -114,26 +113,6 @@ section {
 
 /* skill 開始 */
 
-/* .skill {
-	padding: 3px 0;
-} */
-
-/* .skill > img {
-	width: 55px;
-	height: 55px;
-    margin: 0 20px;
-} */
-
-/* .skill-title {
-	display: inline-block;
-    line-height: 1.5em;
-	margin: 0;
-	vertical-align: 10px;
-	font-size: 35px;
-    font-weight: bold;
-    letter-spacing: 1px;
-} */
-
 .skill-text {
 	width: 500px;
 	margin: 10px auto 0;
@@ -152,10 +131,16 @@ section {
 	background-color: rgb(240, 240, 240);
 }
 
+.sheet-title {
+	margin: 10px auto 0;
+	font-size: 22px;
+	font-weight: bold;
+}
+
 table {
-	width: 320px;
+	width: auto;
     height: 300px;
-    margin: 5px auto;
+    margin: 5px auto 0;
 }
 
 th {
@@ -174,23 +159,6 @@ td {
 table td:nth-child(2) {
 	font-size: 18px;
 }
-
-.sheet-title {
-	margin: 10px auto 0;
-	font-size: 22px;
-	font-weight: bold;
-}
-
-.sheet-content {
-	margin: 10px auto;
-	font-size: 20px;
-}
-
-.skill-content {
-	margin: 0;
-	font-size: 30px;
-}
-
 
 .star5_rating {
 	position: relative;
@@ -230,33 +198,21 @@ table td:nth-child(2) {
 
 /* works 開始 */
 
-/* .works {
-	padding: 3px;
-} */
-
-/* .works > img {
-	width: 55px;
-	height: 55px;
-    margin: 0 20px;
-} */
-
-/* .works-title {
-	display: inline-block;
-    line-height: 1.5em;
-	margin: 0;
-	vertical-align: 10px;
-	font-size: 35px;
-    font-weight: bold;
-    letter-spacing: 1px;
-} */
-
 .airticle-caption {
 	display: inline-block;
 	width: 345px;
-	height: 570px;
+	height: auto;
+	/* height: 570px; */
 	margin: 15px 10px 0 10px;
 	border: 2px solid rgba(170, 170, 170);
 	border-radius: 5px;
+}
+
+.caption-title {
+	margin: 10px auto 0;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 1px;
 }
 
 .caption-img {
@@ -265,13 +221,6 @@ table td:nth-child(2) {
 	height: 230px;
 	margin: 10px auto 0;
 	border-radius: 5px;
-}
-
-.caption-title {
-	margin: 10px auto 0;
-	font-size: 20px;
-	font-weight: bold;
-	letter-spacing: 1px;
 }
 
 .url {
@@ -289,32 +238,31 @@ table td:nth-child(2) {
 }
 
 .git-url {
+	display: block;
+	margin: 10px auto 0;
+	padding: 4px 4px 8px;
 	color:rgb(48, 24, 227);
 	font-size: 20px;
 	text-decoration: none;
 }
 
-.git-url > p {
-	margin: 10px auto 0;
-}
-
 .caption-content {
 	height: 70px;
-	margin: 12px auto 0;
+	margin: 0 auto;
 	padding: 3px 3px 3px 0.5em;
 	border-top: 1px solid rgba(170, 170, 170, 0.3);
 	text-align: left;
 }
 
 .caption-word {
-	margin: 10px auto 0;
-	padding-top: 5px;
+	margin: 0 auto;
+	padding-top: 10px;
 	border-top: 1px solid rgba(170, 170, 170, 0.3);
 	font-size: 19px;
 }
 
 .use-word {
-	margin: 0 auto;
+	margin: 0 auto 10px;
 	padding: 4px 6px;
 	font-size: 15px;
 }
@@ -322,31 +270,6 @@ table td:nth-child(2) {
 /* works 終了*/
 
 /* contact 開始 */
-
-/* .contact {
-	padding: 3px;
-} */
-
-/* .contact > img {
-	width: 55px;
-	height: 55px;
-    margin: 0 20px;
-} */
-
-/* .contact-title {
-	display: inline-block;
-    line-height: 1.5em;
-	margin: 0;
-	vertical-align: 10px;
-	font-size: 35px;
-    font-weight: bold;
-    letter-spacing: 1px;
-} */
-
-/* #contact {
-	color: white;
-	background-color: rgba(52, 52, 52, 0.8);
-} */
 
 .address {
 	height: 200px;
@@ -482,19 +405,112 @@ footer {
 		font-size: 27px;
 	}
 
-/* profile 開始 */
+	/* profile 開始 */
 
-/* profile 終了*/
+	.photo {
+		display: block;
+	}
 
-/* skill 開始 */
+	.photo > img {
+		display: block;
+		width: 130px;
+		height: 130px;
+		margin: 0 auto;
+		padding: 7px;
+	}
 
-/* skill 終了*/
+	.text {
+		display: block;
+		width: 75%;
+		line-height: 1.6;
+		margin: 13px auto 0 auto;
+		padding: 0 0 0 0.5em;
+		font-size: 16px;
+	}
 
-/* works 開始 */
+	/* profile 終了*/
 
-/* works 終了*/
-/* contact 開始 */
+	/* skill 開始 */
 
-/* contact 終了*/
+	.skill-text {
+		width: 75%;
+		margin-top: 6px;
+		padding: 3px;
+	}
+
+	.skill-sheet {
+		display: block;
+		width: 300px;
+		margin: 17px auto 0;
+	}
+
+	.sheet-title {
+		font-size: 20px;
+	}
+
+	/* table {
+		height: 300px;
+		margin: 5px auto 0;
+	} */
+
+	th {
+		font-size: 19px;
+	}
+
+	td {
+		width: 120px;
+		padding: 3px 5px;
+	}
+
+	/* skill 終了*/
+
+	/* works 開始 */
+
+	.airticle-caption {
+		display: block;
+		margin: 10px auto 0 auto;
+	}
+
+	.caption-title {
+		font-size: 20px;
+		letter-spacing: 0.5px;
+	}
+	
+	.caption-img {
+		width: 90%;
+		height: 200px;
+	}
+	
+	.url {
+		margin: 15px auto 0;
+		padding: 7px 0 5px;
+	}
+	
+	.caption-url {
+		padding: 2px;
+	}
+	
+	.git-url {
+		font-size: 18px;
+	}
+	
+	.caption-content {
+		padding: 5px;
+	}
+	
+	.caption-word {
+		padding-top: 10px;
+	}
+	
+	.use-word {
+		padding: 4px 6px;
+		font-size: 15px;
+	}
+
+	/* works 終了*/
+
+	/* contact 開始 */
+
+	/* contact 終了*/
 
 }

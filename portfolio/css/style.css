@@ -35,7 +35,7 @@ header > p {
 }
 
 ul {
-	margin: 0;
+	margin: 15px auto 0 auto;
 	padding: 0;
 }
 
@@ -119,7 +119,39 @@ section {
 
 /* skill 開始 */
 
-.skill-text {
+/* .skill-set {
+	margin: 15px auto 0;
+} */
+
+.skill-set > table {
+	width: 500px;
+	height: 100px;
+	margin: 10px auto 0;
+	font-size: 18px;
+	text-align: center;
+}
+
+.skill-set thead {
+	height: 50px;
+	font-size: 23px;
+	background-color: blue;
+}
+
+
+/* .skill-set th {
+	font-size: 20px;
+} */
+
+.skill-set td {
+	font-size: 20px;
+}
+
+/* .skill-set > table td {
+	font-size: 20px;
+	color: red;
+} */
+
+/* .skill-text {
 	width: 500px;
 	margin: 10px auto 0;
 	padding: 6px;
@@ -198,7 +230,7 @@ table td:nth-child(2) {
 .star5_rating[data-rate="1.5"]:after{ width: 30%; }
 .star5_rating[data-rate="1"]:after{ width: 20%; } 
 .star5_rating[data-rate="0.5"]:after{ width: 10%; } 
-.star5_rating[data-rate="0"]:after{ width: 0%; }
+.star5_rating[data-rate="0"]:after{ width: 0%; } */
 
 /*  skill 終了*/
 
@@ -352,8 +384,8 @@ footer {
 		letter-spacing: 0.5px;
 	}
 
-	nav {
-		margin: 20px auto 0 auto;
+	ul {
+		margin-top: 10px;
 	}
 
 	li {
@@ -447,11 +479,6 @@ footer {
 	.sheet-title {
 		font-size: 20px;
 	}
-
-	/* table {
-		height: 300px;
-		margin: 5px auto 0;
-	} */
 
 	th {
 		font-size: 19px;
@@ -561,9 +588,8 @@ footer {
 
 	@media (max-width: 499px) {
 	
-	nav {
+	ul {
 		width: 270px;
-		margin-top: 15px;
 	}
 
 	li {

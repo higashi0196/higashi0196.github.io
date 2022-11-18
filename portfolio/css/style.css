@@ -233,6 +233,7 @@ section {
 }
 
 .caption-url {
+    display: inline-block;
     padding: 5px 5px 0;
     line-height: 2;
     color: rgb(48, 24, 227);
@@ -241,7 +242,8 @@ section {
 }
 
 .git-url {
-    display: block;
+    /* display: block; */
+    display: inline-block;
     margin: 10px auto 0;
     padding: 4px 4px 8px;
     color:rgb(48, 24, 227);
@@ -517,9 +519,6 @@ footer {
         width: 350px;
         margin: 15px auto 0;
         font-size: 16px;
-        /* height: 100px;
-        margin: 15px auto 0;
-        font-size: 16px; */
     }
     
     .detail thead th {
@@ -563,10 +562,6 @@ footer {
         width: 250px;
         height: 200px;
         margin: 10px auto 0 ;
-        /* display: inline-block;
-        width: 250px;
-        height: 250px;
-        margin: 10px 23px 0 0; */
     }
 
     .caption-title {
@@ -578,10 +573,6 @@ footer {
         display: block;
         width: 350px;
         margin: 0 auto;
-        /* display: inline-block;
-        width: 400px;
-        height: auto;
-        margin: 0; */
     }
     
     .url {

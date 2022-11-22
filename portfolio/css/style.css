@@ -1,7 +1,7 @@
 body {
     width: 100%;
     margin: 0;
-    /* background-color: rgba(210, 210, 210, 0.5); */
+    /* background-color: rgba(210, 210, 210, 0.2); */
     text-align: center;
     user-select: none;
 }
@@ -15,9 +15,9 @@ body {
 } */
 
 header {
-    height: 300px;
+    height: 330px;
     background: url(./../img/header.jpg);
-    background-color: rgba(145, 145, 145, 0.5);
+    background-color: rgba(115, 115, 115, 0.6);
     background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,8 +26,8 @@ header {
 
 header > p {
     margin: 0;
-    line-height: 300px;
-    color: rgb(255, 255, 255);
+    line-height: 330px;
+    color: white;
     font-family: "Arial unicode ms";
     font-size: 68px;
     font-weight: bold;
@@ -85,7 +85,7 @@ section {
     display: inline-block;
     line-height: 1.5em;
     margin: 0;
-    vertical-align:text-top;
+    vertical-align: text-top;
     font-family: "Trebuchet MS";
     font-size: 35px;
     font-weight: bold;

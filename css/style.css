@@ -1,18 +1,13 @@
 body {
-    width: 100%;
     margin: 0;
     /* background-color: rgba(210, 210, 210, 0.2); */
     text-align: center;
     user-select: none;
 }
-/* 
+
 .wrapper {
-    max-width: 960px;
-    margin: 0;
-    background-color: rgba(210, 210, 210, 0.5);
-    text-align: center;
-    user-select: none;
-} */
+    width: 100%;
+}
 
 header {
     height: 330px;
@@ -196,7 +191,6 @@ section {
 /* works 開始 */
 
 .airticle-caption {
-    width: 700px;
     margin: 15px auto 0;
     padding-bottom: 23px;
     border-bottom: 2px solid rgba(170, 170, 170);
@@ -210,11 +204,18 @@ section {
     letter-spacing: 1px;
 }
 
+.box {
+    display:flex;
+    justify-content: center;
+}
+
 .work-img {
     display: inline-block;
     width: 250px;
     height: 250px;
     margin: 10px 23px 0 0;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 5px;
 }
 
 .caption-img {
@@ -237,16 +238,18 @@ section {
 }
 
 .caption-url {
-    display: inline-block;
+    /* display: inline-block; */
+    display: block;
     padding: 5px 5px 0;
     line-height: 2;
     color: rgb(48, 24, 227);
-    font-size: 18px;
+    font-size: 17px;
     text-decoration: none;
 }
 
 .git-url {
-    display: inline-block;
+    /* display: inline-block; */
+    display: block;
     margin: 10px auto 0;
     padding: 4px 4px 8px;
     color:rgb(48, 24, 227);
@@ -462,17 +465,14 @@ footer li a:hover {
 
     /* works 開始 */
 
-    .airticle-caption {
-        width: 700px;
-        margin: 15px auto 0;
-        padding-bottom: 23px;
-        border-bottom: 2px solid rgba(170, 170, 170);
+    .box {
+        display: block;
+        /* justify-content: center; */
     }
 
     .airticle-caption {
         display: block;
-        width: 350px;
-        margin: 10px auto 0 auto;
+        margin-top: 10px;
     }
 
     .work-img {

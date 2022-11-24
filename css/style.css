@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    /* background-color: rgba(210, 210, 210, 0.2); */
     text-align: center;
     user-select: none;
 }
@@ -44,14 +43,14 @@ li > a {
     font-size: 25px;
     font-family: "Trebuchet MS";
     font-weight: bold;
-    vertical-align: 10px;
     text-decoration: none;
+    vertical-align: 10px;
 }
 
 li > img {
     width: 42px;
     height: 42px;
-    margin: 0 13px 0 0;
+    margin-right: 13px;
 }
 
 li > a:hover {
@@ -59,7 +58,7 @@ li > a:hover {
 }
 
 section {
-    margin: 30px 0 0 0;
+    margin: 30px auto 0;
 }
 
 .profile, .skill,
@@ -71,44 +70,40 @@ section {
 .works > img, .contact > img {
     width: 55px;
     height: 55px;
-    margin: 0 20px;
-    vertical-align: top;
+    margin: 0 16px;
 }
 
 .profile-title, .skill-title, 
 .works-title, .contact-title {
     display: inline-block;
-    line-height: 1.5em;
     margin: 0;
-    vertical-align: text-top;
     font-family: "Trebuchet MS";
     font-size: 35px;
     font-weight: bold;
+    vertical-align: 13px;
     letter-spacing: 1px;
 }
 
 /* profile 開始 */
 
 .photo {
-    display:inline-block;
+    display: inline-block;
 }
 
 .photo > img {
     width: 150px;
     height: 150px;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
     padding: 15px;
     border-radius: 50%;
-    display: table-cell;
-    vertical-align: middle;
 }
 
 .text {
     display: inline-block;
     width: 450px;
     line-height: 1.8;
-    margin: 5px 20px 0 20px;
-    padding: 0 0 0 1em;
+    margin: 10px 20px 0 20px;
+    padding-left: 1em;
     font-size: 17px;
     text-align: left;
 }
@@ -119,7 +114,7 @@ section {
 
 .skill-set > table {
     border-collapse: collapse;
-    width: 550px;
+    width: 565px;
     margin: 10px auto 0;
     font-size: 20px;
 }
@@ -148,24 +143,26 @@ section {
 
 .detail table {
     border-collapse: collapse;
-    width: 550px;
+    width: 565px;
     margin: 15px auto 0;
     font-size: 16px;
 }
 
 .detail thead th {
+    height: 45px;
     background-color: rgb(156, 193, 220);
     font-size: 19px;
 }
 
 .detail th {
     width: 90px;
-    height: 37px;
+    height: 40px;
+    padding: 0;
 }
 
 .detail td {
-    height: 37px;
-    padding: 2px 3px 6px 15px;
+    height: auto;
+    padding: 6px 3px 5px 15px;
     font-size: 17px;
     text-align: left;
 }
@@ -184,6 +181,21 @@ section {
 
 .detail > table tr:nth-child(12) {
     border-top: 1px solid rgb(100, 126, 143);
+}
+
+.detail > table tr:nth-child(2) th {
+    padding-top: 6px;
+    vertical-align: top;
+}
+
+.detail > table tr:nth-child(5) th {
+    padding-top: 6px;
+    vertical-align: top;
+}
+
+.detail > table tr:nth-child(8) th {
+    padding-top: 6px;
+    vertical-align: top;
 }
 
 /*  skill 終了*/
@@ -210,7 +222,6 @@ section {
 }
 
 .work-img {
-    display: inline-block;
     width: 250px;
     height: 250px;
     margin: 10px 23px 0 0;
@@ -225,7 +236,6 @@ section {
 }
 
 .work-detail {
-    display: inline-block;
     width: 400px;
     height: auto;
     margin: 0;
@@ -238,7 +248,6 @@ section {
 }
 
 .caption-url {
-    /* display: inline-block; */
     display: block;
     padding: 5px 5px 0;
     line-height: 2;
@@ -366,7 +375,7 @@ footer li a:hover {
     li > img {
         width: 30px;
         height: 30px;
-        margin: 0 8px 0 0;
+        margin-right: 8px;
     }
     
     section {
@@ -398,8 +407,8 @@ footer li a:hover {
 
     .photo > img {
         display: block;
-        width: 130px;
-        height: 130px;
+        width: 125px;
+        height: 125px;
         margin: 0 auto;
         padding: 7px;
     }
@@ -440,24 +449,20 @@ footer li a:hover {
     
     .detail table {
         width: 350px;
-        margin: 15px auto 0;
-        font-size: 16px;
     }
     
     .detail thead th {
-        height: 36px;
-        padding: 0;
-        font-size: 18px;
+        height: 37px;
+        font-size: 17px;
     }
     
     .detail th {
-        width: 90px;
+        width: 85px;
         height: 33px;
     }
     
     .detail td {
-        height: 33px;
-        padding: 2px 3px 4px 10px;
+        padding-left: 10px;
         font-size: 15px;
     }
 
@@ -465,21 +470,9 @@ footer li a:hover {
 
     /* works 開始 */
 
-    .box {
-        display: block;
-        /* justify-content: center; */
-    }
-
     .airticle-caption {
         display: block;
         margin-top: 10px;
-    }
-
-    .work-img {
-        display: block;
-        width: 250px;
-        height: 200px;
-        margin: 10px auto 0 ;
     }
 
     .caption-title {
@@ -487,8 +480,16 @@ footer li a:hover {
         letter-spacing: 0.5px;
     }
 
-    .work-detail {
+    .box {
         display: block;
+    }
+
+    .work-img {
+        height: 200px;
+        margin: 10px auto 0 ;
+    }
+
+    .work-detail {
         width: 350px;
         margin: 0 auto;
     }
@@ -526,8 +527,6 @@ footer li a:hover {
 
     .address {
         height: 160px;
-        color: white;
-        background-color: rgb(70, 70, 70);
     }
     
     .connection {
@@ -545,13 +544,8 @@ footer li a:hover {
     }
     
     footer {
-        height: 85px;
-        padding-top: 15px;
-    }
-
-    footer ul {
-       width: 315px;
-       margin: 0 auto;
+        height: 80px;
+        padding-top: 5px;
     }
     
     footer li {
@@ -563,7 +557,7 @@ footer li a:hover {
     }
 
     .copyright {
-        margin-top: 17px;
+        margin-top: 10px;
         font-size: 12px ;
     }
 

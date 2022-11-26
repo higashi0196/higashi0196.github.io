@@ -203,13 +203,14 @@ section {
 /* works 開始 */
 
 .airticle-caption {
-    margin: 15px auto 0;
-    padding-bottom: 23px;
-    border-bottom: 2px solid rgba(170, 170, 170);
+    margin-top: 15px;
 }
 
 .caption-title {
-    margin: 10px auto 0;
+    width: 400px;
+    margin: 0 auto;
+    padding: 13px 0 8px;
+    border-top: 1px solid rgba(170, 170, 170);
     font-family: "Trebuchet MS";
     font-size: 22px;
     font-weight: bold;
@@ -236,43 +237,36 @@ section {
 }
 
 .work-detail {
-    width: 400px;
+    width: 450px;
     height: auto;
     margin: 0;
 }
 
 .url {
     margin: 0;
-    padding-top: 5px;
+    padding-top: 10px;
     font-size: 19px;
+}
+
+.work-detail .url:nth-child(3) {
+    border-top: 1px solid rgba(170, 170, 170, 0.3);
 }
 
 .caption-url {
     display: block;
-    padding: 5px 5px 0;
-    line-height: 2;
+    padding: 5px 5px 10px;
+    line-height: 1.7;
     color: rgb(48, 24, 227);
-    font-size: 17px;
-    text-decoration: none;
-}
-
-.git-url {
-    /* display: inline-block; */
-    display: block;
-    margin: 10px auto 0;
-    padding: 4px 4px 8px;
-    color:rgb(48, 24, 227);
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
 }
 
 .caption-content {
-    display: table-cell;
-    height: 70px;
+    height: auto;
     margin: 0 auto;
-    padding: 5px 5px 5px 0.5em;
+    padding: 7px 5px 7px 0.5em;;
+    font-size: 17px;
     border-top: 1px solid rgba(170, 170, 170, 0.3);
-    vertical-align: middle;
     text-align: left;
 }
 
@@ -284,8 +278,8 @@ section {
 }
 
 .use-word {
-    margin: 10px auto 0;
-    padding: 0 5px;
+    margin: 0;
+    padding-top: 10px;
     font-size: 17px;
 }
 
@@ -472,10 +466,12 @@ footer li a:hover {
 
     .airticle-caption {
         display: block;
-        margin-top: 10px;
     }
 
     .caption-title {
+        margin-top: 5px;
+        padding: 10px 0 0;
+        width: 300px;
         font-size: 20px;
         letter-spacing: 0.5px;
     }
@@ -490,34 +486,31 @@ footer li a:hover {
     }
 
     .work-detail {
-        width: 350px;
         margin: 0 auto;
     }
     
     .url {
-        margin-top: 5px;
-        padding: 7px 0 5px;
+        padding-top: 8px;
+        font-size: 17px;
     }
     
     .caption-url {
-        padding: 2px;
-        font-size: 14.5px;
-    }
-    
-    .git-url {
-        font-size: 18px;
+        line-height: 2;
+        padding: 5px 2px 10px;
+        font-size: 15px;
     }
     
     .caption-content {
-        padding: 3px;
+        line-height: 1.8;
+        padding: 7px 5px 7px 45px;
+        font-size: 15px;
     }
     
     .caption-word {
-        padding-top: 7px;
+        font-size: 17px;
     }
     
     .use-word {
-        padding: 0 5px;
         font-size: 15px;
     }
 
@@ -560,9 +553,10 @@ footer li a:hover {
         margin-top: 10px;
         font-size: 12px ;
     }
+    
+    /* contact 終了*/
 
 }
-    /* contact 終了*/
 
 @media (max-width: 499px) {
 
@@ -577,6 +571,14 @@ footer li a:hover {
 
     li {
         margin: 3px 5px;
+    }
+
+    .work-detail {
+        width: 350px;
+    }
+
+    .caption-url {
+        font-size: 12.5px;
     }
 
 }   

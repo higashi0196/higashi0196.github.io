@@ -225,7 +225,7 @@ section {
 .work-img {
     width: 250px;
     height: 250px;
-    margin: 10px 23px 0 0;
+    margin: 15px 23px 0 0;
     border: 1px solid rgb(227, 227, 227);
     border-radius: 5px;
 }
@@ -553,9 +553,8 @@ footer li a:hover {
         margin-top: 10px;
         font-size: 12px ;
     }
-    
-    /* contact 終了*/
 
+    /* contact 終了*/
 }
 
 @media (max-width: 499px) {

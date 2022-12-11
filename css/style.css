@@ -179,9 +179,9 @@ section {
     border-top: 1px solid rgb(100, 126, 143);
 }
 
-.detail > table tr:nth-child(12) {
+/* .detail > table tr:nth-child(3n+1) {
     border-top: 1px solid rgb(100, 126, 143);
-}
+} */
 
 .detail > table tr:nth-child(2) th {
     padding-top: 6px;

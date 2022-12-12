@@ -152,6 +152,7 @@ section {
     height: 45px;
     background-color: rgb(156, 193, 220);
     font-size: 19px;
+    border-top: 2px;
 }
 
 .detail th {
@@ -178,10 +179,6 @@ section {
 .detail > table tr:nth-child(10) {
     border-top: 1px solid rgb(100, 126, 143);
 }
-
-/* .detail > table tr:nth-child(3n+1) {
-    border-top: 1px solid rgb(100, 126, 143);
-} */
 
 .detail > table tr:nth-child(2) th {
     padding-top: 6px;

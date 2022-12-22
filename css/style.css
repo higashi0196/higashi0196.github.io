@@ -29,7 +29,7 @@ header > p {
 }
 
 ul {
-    margin: 15px auto 0 auto;
+    margin: 15px auto 0;
     padding: 0;
 }
 
@@ -337,6 +337,7 @@ footer li a:hover {
 /* contact 終了*/
 
 /* スマートフォン向け CSS */
+
 @media (max-width: 767px) {
 
     header {

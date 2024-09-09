@@ -315,7 +315,7 @@ section ul {
     font-size: 17px;
 }
 
-使用言語 title
+/* 使用言語 title */
 .lang {
     margin: 0 auto;
     padding-top: 10px;

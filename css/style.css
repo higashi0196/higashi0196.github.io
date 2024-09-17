@@ -270,14 +270,17 @@ section ul {
 
 /* 使用言語/URL/github */
 .lang, .url, .Github {
-    margin: 7px auto 0;
-    height: 25;
-}
-
-/* 使用言語タイトル */
-.lang {
+    margin: 0 auto;
+    padding-top: 7px;
+    height: 23px;
     font-size: 19px;
     font-weight: bold;
+    border-top: 1px solid rgba(170, 170, 170, 0.3);
+}
+
+/* 使用言語 title */
+.lang {
+    border-top: 1px solid rgba(170, 170, 170, 0.3);
 }
 
 /* 使用言語 */
@@ -285,19 +288,14 @@ section ul {
     margin: 0;
     padding: 5px;
     line-height: 1.8;
-    font-size: 17px;
-}
-
-.url {
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 18px;
 }
 
 /* アプリURL */
 .work-url {
     display: block;
     padding: 5px;
-    line-height: 1.8;
+    line-height: 1.5;
     color: rgb(48, 24, 227);
     font-size: 18px;
     text-decoration: none;
@@ -306,21 +304,6 @@ section ul {
 .Github {
     font-size: 19px;
     font-weight: bold;
-}
-
-/* 使用言語 div */
-.lang-group{
-    margin: 0;
-    padding-top: 10px;
-    font-size: 17px;
-}
-
-/* 使用言語 title */
-.lang {
-    margin: 0 auto;
-    padding-top: 10px;
-    border-top: 1px solid rgba(170, 170, 170, 0.3);
-    font-size: 19px;
 }
 
 /* contactグループ  */
